@@ -23,11 +23,11 @@ La classe "Voiture" est définie (models/Voiture.js) en étendant la classe "Veh
 On définit, pour cette classe, l'attribut "couleur", les getter et setter associés et on redéfinie "afficherDetails" pour prendre en compte l'attribut couleur.
 
 Dans index,
-    - on importe les différentes classes
-    - on instancie une nouvelle voiture ("Toyota", "Camry", 2022, "Noir")
-    - on appelle afficherDetails() pour afficher les différentes infos de la voiture
-    - on modifie la couleur de la voiture en utilisant le setter
-    - on appelle afficherDetails() pour afficher les nouvelles informations de la voiture
+- on importe les différentes classes
+- on instancie une nouvelle voiture ("Toyota", "Camry", 2022, "Noir")
+- on appelle afficherDetails() pour afficher les différentes infos de la voiture
+- on modifie la couleur de la voiture en utilisant le setter
+- on appelle afficherDetails() pour afficher les nouvelles informations de la voiture
 
 ### Etape 4
 
@@ -36,7 +36,7 @@ La classe "Chien" est définie (models/Chien.js) en etendant "Animal" et en red�
 La classe "Chat" est définie (models/Chat.js) en etendant "Animal" et en redéfinissant faireDuBruit().
 
 Dans index.js,
-    - on importe les différentes classes,
-    - on instancie un animal, un chat et un chien
-    - on les ajoute dans une liste (tableau)
-    - on boucle sur les éléments du tableau pour appeler faireDuBruit() pour chacun des éléments de la liste afin d'afficher leur cri
+- on importe les différentes classes,
+- on instancie un animal, un chat et un chien
+- on les ajoute dans une liste (tableau)
+- on boucle sur les éléments du tableau pour appeler faireDuBruit() pour chacun des éléments de la liste afin d'afficher leur cri
