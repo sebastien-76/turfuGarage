@@ -10,8 +10,8 @@
 
 ## Structure
 
-Un dossier "models" contenant les classes créées.
-Un fichier index  dans lequel sont instanciées les différentes classes, et où sont appelées les méthodes.
+- Un dossier "models" contenant les classes créées.
+- Un fichier index  dans lequel sont instanciées les différentes classes, et où sont appelées les méthodes.
 
 
 ## Logique
