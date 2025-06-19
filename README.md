@@ -22,7 +22,7 @@ La superclasse "Vehicule" est définie (models/Vehicule.js) avec les attributs p
 La classe "Voiture" est définie (models/Voiture.js) en étendant la classe "Vehicule". Elle hérite des attributs, des accesseurs et méthodes de "Vehicule".
 On définit, pour cette classe, l'attribut "couleur", les getter et setter associés et on redéfinie "afficherDetails" pour prendre en compte l'attribut couleur.
 
-Dans index,
+Dans index.js,
 - on importe les différentes classes
 - on instancie une nouvelle voiture ("Toyota", "Camry", 2022, "Noir")
 - on appelle afficherDetails() pour afficher les différentes infos de la voiture

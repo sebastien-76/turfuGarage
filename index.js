@@ -4,6 +4,8 @@ import Animal from "./models/Animal.js";
 import Chien from "./models/Chien.js";
 import Chat from "./models/Chat.js";
 
+import { faker } from "@faker-js/faker";
+
 /* Définition d'une nouvelle voiture */
 const voiture = new Voiture("Toyota", "Camry", 2022, "Noir");
 
@@ -32,3 +34,54 @@ const listeAnimaux = [animal, chat, chien];
 for (const el of listeAnimaux) {
     el.faireDuBruit();
 }
+
+/* Changement de couleur et affichage des détails */
+voiture.changerCouleur("Bleu");
+
+
+/* Génération d'une liste de voiture de 10 voitures*/
+function VoitureListe() {
+    let voitureListe = [];
+
+    for (let i = 0; i < 10; i++) {
+        voitureListe[i] = new Voiture(
+            faker.vehicle.manufacturer(),
+            faker.vehicle.model(),
+            faker.date.anytime().getFullYear(),
+            faker.color.human(),
+        );
+    }
+
+    return voitureListe;
+}
+
+/* Récupération de la liste */
+let liste = VoitureListe();
+
+/* Affichage des détails de la liste */
+for (let i = 0; i < liste.length; i++) {
+    liste[i].afficherDetails();
+};
+
+/* fonction de selection et affichage des détails des voitures d'une année */
+function selectionParAnnee(annee) {
+    let listeParAnnee = [];
+    for (let i = 0; i < liste.length; i++) {
+        if (liste[i].getAnnee() === annee){
+            listeParAnnee.push(liste[i]);
+        }
+    };
+    console.log("Liste des voitures de l'annee " + annee + " :");
+    for (let i = 0; i < listeParAnnee.length; i++) {
+        listeParAnnee[i].afficherDetails();
+    };  
+}
+
+/* Appel de la fonction */
+selectionParAnnee(2025);
+
+
+
+
+
+
