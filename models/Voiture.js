@@ -23,4 +23,9 @@ export default class Voiture extends Vehicule {
         super.afficherDetails();
         console.log(`Couleur: ${this.#couleur}`);
     }
+
+    changerCouleur(nvlecouleur) {
+        this.#couleur = nvlecouleur;
+        this.afficherDetails();
+    }
 }

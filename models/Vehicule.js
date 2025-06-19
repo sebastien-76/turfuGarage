@@ -37,9 +37,7 @@ class Vehicule {
 
     
     afficherDetails() {
-        console.log(`Marque: ${this.#marque}`);
-        console.log(`Modèle: ${this.#modele}`);
-        console.log(`Année: ${this.#annee}`);
+        console.log(`Marque: ${this.#marque} - Modele: ${this.#modele} - Année : ${this.#annee}`);
     }
 }
 
