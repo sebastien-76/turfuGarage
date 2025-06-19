@@ -8,5 +8,8 @@
   },
   "author": "Moi",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0"
+  }
 }
